@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#nav{
+  /* border: 2px solid red; */
+  background-color: black;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+#nav a {
+  border: 1px solid black;
+  text-decoration: none;
+  color: white;
+  margin: 15px 15px;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#nav a:hover{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  color: black;
+}
+
+#products{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 275px;
+  height: 480px;
+  border: 2px solid black;
+  margin-top: 10px;
+  box-shadow: 0px 0px 20px cadetblue;
+}
+.card-img{
+  width: 100%;
+  height: 65%;
+}
+.title{
+  text-align: center;
+}
+.checked{
+  color: orange;
+}
+.rating{
+  text-align: center;
+}
+.btn-cart{
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 5px 10px;
+  width: 80px;
+}
+
+.card-property{
+height: 25%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+/* cart styling starts here */
+
+#cart_section{
+  margin: auto;
+  width: 900px;
+  height: 50vh;
+  /* background-color: gold; */
+  display: none;
+}
+
+.cart_item{
+  /* border: 2px solid black; */
+  margin-top: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 10px black;
+  margin-bottom: 20px;
+  }
+  
+  .cart-title , .cart-price , .cart-delete , .cart-image{
+  /* border: 2px solid red; */
+  text-align: center;
+  }
+  .cart-title{
+  width: 30%;
+  }
+  
+  .cart-price{
+  width: 15%;
+  }
+  
+  .cart-delete{
+  width: 15%;
+  padding: 8px 16px;
+  }
+  
+  /* responsive cart-image */
+  
+  .cart-image {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  }
+  
+  .cart-image > img {
+  width: auto;
+  height: 100%;
+  }
+
+  #tot_price{
+    border: 1px solid black;
+    text-align: right;
+    padding: 15px;
+    padding-right: 25px;
+    box-shadow: 0px 0px 10px black;
+    }
+
+/* cart styling ends here */
